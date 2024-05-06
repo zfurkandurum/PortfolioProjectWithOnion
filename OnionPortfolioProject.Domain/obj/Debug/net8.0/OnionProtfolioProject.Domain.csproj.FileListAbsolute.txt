@@ -1,0 +1,15 @@
+/Users/zekifurkandurum/RiderProjects/OnionPortfolioProject/OnionProtfolioProject.Domain/bin/Debug/net8.0/OnionProtfolioProject.Domain.deps.json
+/Users/zekifurkandurum/RiderProjects/OnionPortfolioProject/OnionProtfolioProject.Domain/bin/Debug/net8.0/OnionProtfolioProject.Domain.runtimeconfig.json
+/Users/zekifurkandurum/RiderProjects/OnionPortfolioProject/OnionProtfolioProject.Domain/bin/Debug/net8.0/OnionProtfolioProject.Domain.dll
+/Users/zekifurkandurum/RiderProjects/OnionPortfolioProject/OnionProtfolioProject.Domain/bin/Debug/net8.0/OnionProtfolioProject.Domain.pdb
+/Users/zekifurkandurum/RiderProjects/OnionPortfolioProject/OnionProtfolioProject.Domain/obj/Debug/net8.0/OnionProtfolioProject.Domain.csproj.AssemblyReference.cache
+/Users/zekifurkandurum/RiderProjects/OnionPortfolioProject/OnionProtfolioProject.Domain/obj/Debug/net8.0/OnionProtfolioProject.Domain.GeneratedMSBuildEditorConfig.editorconfig
+/Users/zekifurkandurum/RiderProjects/OnionPortfolioProject/OnionProtfolioProject.Domain/obj/Debug/net8.0/OnionProtfolioProject.Domain.AssemblyInfoInputs.cache
+/Users/zekifurkandurum/RiderProjects/OnionPortfolioProject/OnionProtfolioProject.Domain/obj/Debug/net8.0/OnionProtfolioProject.Domain.AssemblyInfo.cs
+/Users/zekifurkandurum/RiderProjects/OnionPortfolioProject/OnionProtfolioProject.Domain/obj/Debug/net8.0/OnionProtfolioProject.Domain.csproj.CoreCompileInputs.cache
+/Users/zekifurkandurum/RiderProjects/OnionPortfolioProject/OnionProtfolioProject.Domain/obj/Debug/net8.0/OnionProtfolioProject.Domain.dll
+/Users/zekifurkandurum/RiderProjects/OnionPortfolioProject/OnionProtfolioProject.Domain/obj/Debug/net8.0/refint/OnionProtfolioProject.Domain.dll
+/Users/zekifurkandurum/RiderProjects/OnionPortfolioProject/OnionProtfolioProject.Domain/obj/Debug/net8.0/OnionProtfolioProject.Domain.pdb
+/Users/zekifurkandurum/RiderProjects/OnionPortfolioProject/OnionProtfolioProject.Domain/obj/Debug/net8.0/OnionProtfolioProject.Domain.genruntimeconfig.cache
+/Users/zekifurkandurum/RiderProjects/OnionPortfolioProject/OnionProtfolioProject.Domain/obj/Debug/net8.0/ref/OnionProtfolioProject.Domain.dll
+/Users/zekifurkandurum/RiderProjects/OnionPortfolioProject/OnionProtfolioProject.Domain/obj/Debug/net8.0/OnionProtfolioProject.Domain.sourcelink.json

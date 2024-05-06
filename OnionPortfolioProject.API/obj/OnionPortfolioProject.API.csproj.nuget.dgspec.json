@@ -27,8 +27,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/Users/zekifurkandurum/RiderProjects/OnionPortfolioProject/OnionProtfolioProject.Persistence/OnionProtfolioProject.Persistence.csproj": {
-                "projectPath": "/Users/zekifurkandurum/RiderProjects/OnionPortfolioProject/OnionProtfolioProject.Persistence/OnionProtfolioProject.Persistence.csproj"
+              "/Users/zekifurkandurum/RiderProjects/OnionPortfolioProject/OnionPortfolioProject.Persistence/OnionPortfolioProject.Persistence.csproj": {
+                "projectPath": "/Users/zekifurkandurum/RiderProjects/OnionPortfolioProject/OnionPortfolioProject.Persistence/OnionPortfolioProject.Persistence.csproj"
               }
             }
           }
@@ -43,6 +43,10 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            },
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
               "version": "[8.0.1, )"
@@ -89,14 +93,14 @@
         }
       }
     },
-    "/Users/zekifurkandurum/RiderProjects/OnionPortfolioProject/OnionProtfolioProject.Application/OnionProtfolioProject.Application.csproj": {
+    "/Users/zekifurkandurum/RiderProjects/OnionPortfolioProject/OnionPortfolioProject.Application/OnionPortfolioProject.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/zekifurkandurum/RiderProjects/OnionPortfolioProject/OnionProtfolioProject.Application/OnionProtfolioProject.Application.csproj",
-        "projectName": "OnionProtfolioProject.Application",
-        "projectPath": "/Users/zekifurkandurum/RiderProjects/OnionPortfolioProject/OnionProtfolioProject.Application/OnionProtfolioProject.Application.csproj",
+        "projectUniqueName": "/Users/zekifurkandurum/RiderProjects/OnionPortfolioProject/OnionPortfolioProject.Application/OnionPortfolioProject.Application.csproj",
+        "projectName": "OnionPortfolioProject.Application",
+        "projectPath": "/Users/zekifurkandurum/RiderProjects/OnionPortfolioProject/OnionPortfolioProject.Application/OnionPortfolioProject.Application.csproj",
         "packagesPath": "/Users/zekifurkandurum/.nuget/packages/",
-        "outputPath": "/Users/zekifurkandurum/RiderProjects/OnionPortfolioProject/OnionProtfolioProject.Application/obj/",
+        "outputPath": "/Users/zekifurkandurum/RiderProjects/OnionPortfolioProject/OnionPortfolioProject.Application/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/zekifurkandurum/.nuget/NuGet/NuGet.Config"
@@ -112,8 +116,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/Users/zekifurkandurum/RiderProjects/OnionPortfolioProject/OnionProtfolioProject.Domain/OnionProtfolioProject.Domain.csproj": {
-                "projectPath": "/Users/zekifurkandurum/RiderProjects/OnionPortfolioProject/OnionProtfolioProject.Domain/OnionProtfolioProject.Domain.csproj"
+              "/Users/zekifurkandurum/RiderProjects/OnionPortfolioProject/OnionPortfolioProject.Domain/OnionPortfolioProject.Domain.csproj": {
+                "projectPath": "/Users/zekifurkandurum/RiderProjects/OnionPortfolioProject/OnionPortfolioProject.Domain/OnionPortfolioProject.Domain.csproj"
               }
             }
           }
@@ -128,6 +132,10 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
@@ -169,14 +177,14 @@
         }
       }
     },
-    "/Users/zekifurkandurum/RiderProjects/OnionPortfolioProject/OnionProtfolioProject.Domain/OnionProtfolioProject.Domain.csproj": {
+    "/Users/zekifurkandurum/RiderProjects/OnionPortfolioProject/OnionPortfolioProject.Domain/OnionPortfolioProject.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/zekifurkandurum/RiderProjects/OnionPortfolioProject/OnionProtfolioProject.Domain/OnionProtfolioProject.Domain.csproj",
-        "projectName": "OnionProtfolioProject.Domain",
-        "projectPath": "/Users/zekifurkandurum/RiderProjects/OnionPortfolioProject/OnionProtfolioProject.Domain/OnionProtfolioProject.Domain.csproj",
+        "projectUniqueName": "/Users/zekifurkandurum/RiderProjects/OnionPortfolioProject/OnionPortfolioProject.Domain/OnionPortfolioProject.Domain.csproj",
+        "projectName": "OnionPortfolioProject.Domain",
+        "projectPath": "/Users/zekifurkandurum/RiderProjects/OnionPortfolioProject/OnionPortfolioProject.Domain/OnionPortfolioProject.Domain.csproj",
         "packagesPath": "/Users/zekifurkandurum/.nuget/packages/",
-        "outputPath": "/Users/zekifurkandurum/RiderProjects/OnionPortfolioProject/OnionProtfolioProject.Domain/obj/",
+        "outputPath": "/Users/zekifurkandurum/RiderProjects/OnionPortfolioProject/OnionPortfolioProject.Domain/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/zekifurkandurum/.nuget/NuGet/NuGet.Config"
@@ -204,6 +212,10 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
@@ -245,14 +257,14 @@
         }
       }
     },
-    "/Users/zekifurkandurum/RiderProjects/OnionPortfolioProject/OnionProtfolioProject.Persistence/OnionProtfolioProject.Persistence.csproj": {
+    "/Users/zekifurkandurum/RiderProjects/OnionPortfolioProject/OnionPortfolioProject.Persistence/OnionPortfolioProject.Persistence.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/zekifurkandurum/RiderProjects/OnionPortfolioProject/OnionProtfolioProject.Persistence/OnionProtfolioProject.Persistence.csproj",
-        "projectName": "OnionProtfolioProject.Persistence",
-        "projectPath": "/Users/zekifurkandurum/RiderProjects/OnionPortfolioProject/OnionProtfolioProject.Persistence/OnionProtfolioProject.Persistence.csproj",
+        "projectUniqueName": "/Users/zekifurkandurum/RiderProjects/OnionPortfolioProject/OnionPortfolioProject.Persistence/OnionPortfolioProject.Persistence.csproj",
+        "projectName": "OnionPortfolioProject.Persistence",
+        "projectPath": "/Users/zekifurkandurum/RiderProjects/OnionPortfolioProject/OnionPortfolioProject.Persistence/OnionPortfolioProject.Persistence.csproj",
         "packagesPath": "/Users/zekifurkandurum/.nuget/packages/",
-        "outputPath": "/Users/zekifurkandurum/RiderProjects/OnionPortfolioProject/OnionProtfolioProject.Persistence/obj/",
+        "outputPath": "/Users/zekifurkandurum/RiderProjects/OnionPortfolioProject/OnionPortfolioProject.Persistence/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/zekifurkandurum/.nuget/NuGet/NuGet.Config"
@@ -268,11 +280,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/Users/zekifurkandurum/RiderProjects/OnionPortfolioProject/OnionProtfolioProject.Application/OnionProtfolioProject.Application.csproj": {
-                "projectPath": "/Users/zekifurkandurum/RiderProjects/OnionPortfolioProject/OnionProtfolioProject.Application/OnionProtfolioProject.Application.csproj"
+              "/Users/zekifurkandurum/RiderProjects/OnionPortfolioProject/OnionPortfolioProject.Application/OnionPortfolioProject.Application.csproj": {
+                "projectPath": "/Users/zekifurkandurum/RiderProjects/OnionPortfolioProject/OnionPortfolioProject.Application/OnionPortfolioProject.Application.csproj"
               },
-              "/Users/zekifurkandurum/RiderProjects/OnionPortfolioProject/OnionProtfolioProject.Domain/OnionProtfolioProject.Domain.csproj": {
-                "projectPath": "/Users/zekifurkandurum/RiderProjects/OnionPortfolioProject/OnionProtfolioProject.Domain/OnionProtfolioProject.Domain.csproj"
+              "/Users/zekifurkandurum/RiderProjects/OnionPortfolioProject/OnionPortfolioProject.Domain/OnionPortfolioProject.Domain.csproj": {
+                "projectPath": "/Users/zekifurkandurum/RiderProjects/OnionPortfolioProject/OnionPortfolioProject.Domain/OnionPortfolioProject.Domain.csproj"
               }
             }
           }
@@ -287,6 +299,10 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",

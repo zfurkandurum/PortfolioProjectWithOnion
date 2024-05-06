@@ -6,13 +6,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastru
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{08A96927-228D-466E-A006-6818BD179A7A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnionProtfolioProject.Application", "OnionProtfolioProject.Application\OnionProtfolioProject.Application.csproj", "{1FBC6392-7663-4C02-B500-C3F052E67A79}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnionPortfolioProject.Application", "OnionPortfolioProject.Application\OnionPortfolioProject.Application.csproj", "{1FBC6392-7663-4C02-B500-C3F052E67A79}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnionProtfolioProject.Domain", "OnionProtfolioProject.Domain\OnionProtfolioProject.Domain.csproj", "{429FFF50-0F18-46B6-A1F7-F380A900046B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnionPortfolioProject.Domain", "OnionPortfolioProject.Domain\OnionPortfolioProject.Domain.csproj", "{429FFF50-0F18-46B6-A1F7-F380A900046B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnionProtfolioProject.Infrastructure", "OnionProtfolioProject.Infrastructure\OnionProtfolioProject.Infrastructure.csproj", "{28E4E66B-7F65-4592-B21B-7E85A44B0052}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnionPortfolioProject.Infrastructure", "OnionPortfolioProject.Infrastructure\OnionPortfolioProject.Infrastructure.csproj", "{28E4E66B-7F65-4592-B21B-7E85A44B0052}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnionProtfolioProject.Persistence", "OnionProtfolioProject.Persistence\OnionProtfolioProject.Persistence.csproj", "{23AB7404-C5DD-496B-83DA-D45E3C179B23}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnionPortfolioProject.Persistence", "OnionPortfolioProject.Persistence\OnionPortfolioProject.Persistence.csproj", "{23AB7404-C5DD-496B-83DA-D45E3C179B23}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnionPortfolioProject.API", "OnionPortfolioProject.API\OnionPortfolioProject.API.csproj", "{A9D8BC8F-943F-41F4-9276-6C4FDF4F17B8}"
 EndProject

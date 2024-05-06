@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("OnionPortfolioProject.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+abd55ad9d27097929c831f07423427bc05bab297")]
 [assembly: System.Reflection.AssemblyProductAttribute("OnionPortfolioProject.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("OnionPortfolioProject.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
