@@ -13,7 +13,7 @@ public class UserRepository : IUserRepository
         _context = context;
     }
    
-    public WhoAmI GetWhoAmIById(Guid id)
+    public WhoAmI GetWhoAmIById(int id)
     {
         throw new NotImplementedException();
     }
@@ -28,7 +28,7 @@ public class UserRepository : IUserRepository
         throw new NotImplementedException();
     }
 
-    public void DeleteWhoAmI(Guid id)
+    public void DeleteWhoAmI(int id)
     {
         throw new NotImplementedException();
     }
