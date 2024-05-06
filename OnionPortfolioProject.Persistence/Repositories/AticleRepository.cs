@@ -4,11 +4,11 @@ using PortfolioProjectOnion.Persistence.Context;
 
 namespace OnionProtfolioProject.Persistence.Repositories;
 
-public class AticleRepository : IArticleRepository
+public class ArticleRepository : IArticleRepository
 {
     private readonly DataDbContext _context;
 
-    public AticleRepository(DataDbContext context)
+    public ArticleRepository(DataDbContext context)
     {
         _context = context;
     }
@@ -24,7 +24,7 @@ public class AticleRepository : IArticleRepository
         return _context.Articles.Where(a => a.Id == id).FirstOrDefault();
     }
 
-    public IEnumerable<Article> GetArticleByCategoryId(Guid categoryId)
+    public IEnumerable<Article> GetArticleByCategoryId(int categoryId)
     {
         return _context.Articles.Where(a => a.Categories.Any(c => categoryId == categoryId));
     }
