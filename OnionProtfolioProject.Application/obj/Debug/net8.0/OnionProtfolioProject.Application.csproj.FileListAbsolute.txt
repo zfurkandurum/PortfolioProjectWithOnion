@@ -1,0 +1,17 @@
+/Users/zekifurkandurum/RiderProjects/OnionPortfolioProject/OnionProtfolioProject.Application/bin/Debug/net8.0/OnionProtfolioProject.Application.deps.json
+/Users/zekifurkandurum/RiderProjects/OnionPortfolioProject/OnionProtfolioProject.Application/bin/Debug/net8.0/OnionProtfolioProject.Application.runtimeconfig.json
+/Users/zekifurkandurum/RiderProjects/OnionPortfolioProject/OnionProtfolioProject.Application/bin/Debug/net8.0/OnionProtfolioProject.Application.dll
+/Users/zekifurkandurum/RiderProjects/OnionPortfolioProject/OnionProtfolioProject.Application/bin/Debug/net8.0/OnionProtfolioProject.Application.pdb
+/Users/zekifurkandurum/RiderProjects/OnionPortfolioProject/OnionProtfolioProject.Application/bin/Debug/net8.0/OnionProtfolioProject.Domain.dll
+/Users/zekifurkandurum/RiderProjects/OnionPortfolioProject/OnionProtfolioProject.Application/bin/Debug/net8.0/OnionProtfolioProject.Domain.pdb
+/Users/zekifurkandurum/RiderProjects/OnionPortfolioProject/OnionProtfolioProject.Application/obj/Debug/net8.0/OnionProtfolioProject.Application.csproj.AssemblyReference.cache
+/Users/zekifurkandurum/RiderProjects/OnionPortfolioProject/OnionProtfolioProject.Application/obj/Debug/net8.0/OnionProtfolioProject.Application.GeneratedMSBuildEditorConfig.editorconfig
+/Users/zekifurkandurum/RiderProjects/OnionPortfolioProject/OnionProtfolioProject.Application/obj/Debug/net8.0/OnionProtfolioProject.Application.AssemblyInfoInputs.cache
+/Users/zekifurkandurum/RiderProjects/OnionPortfolioProject/OnionProtfolioProject.Application/obj/Debug/net8.0/OnionProtfolioProject.Application.AssemblyInfo.cs
+/Users/zekifurkandurum/RiderProjects/OnionPortfolioProject/OnionProtfolioProject.Application/obj/Debug/net8.0/OnionProtfolioProject.Application.csproj.CoreCompileInputs.cache
+/Users/zekifurkandurum/RiderProjects/OnionPortfolioProject/OnionProtfolioProject.Application/obj/Debug/net8.0/OnionProtfolioProject.Application.csproj.CopyComplete
+/Users/zekifurkandurum/RiderProjects/OnionPortfolioProject/OnionProtfolioProject.Application/obj/Debug/net8.0/OnionProtfolioProject.Application.dll
+/Users/zekifurkandurum/RiderProjects/OnionPortfolioProject/OnionProtfolioProject.Application/obj/Debug/net8.0/refint/OnionProtfolioProject.Application.dll
+/Users/zekifurkandurum/RiderProjects/OnionPortfolioProject/OnionProtfolioProject.Application/obj/Debug/net8.0/OnionProtfolioProject.Application.pdb
+/Users/zekifurkandurum/RiderProjects/OnionPortfolioProject/OnionProtfolioProject.Application/obj/Debug/net8.0/OnionProtfolioProject.Application.genruntimeconfig.cache
+/Users/zekifurkandurum/RiderProjects/OnionPortfolioProject/OnionProtfolioProject.Application/obj/Debug/net8.0/ref/OnionProtfolioProject.Application.dll

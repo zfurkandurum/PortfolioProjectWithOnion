@@ -1,0 +1,53 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{645C1242-6737-4DE2-9B29-E477488B8F63}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{F79D2E07-77F9-4A43-B8E0-C1F23C000E1C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{08A96927-228D-466E-A006-6818BD179A7A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnionProtfolioProject.Application", "OnionProtfolioProject.Application\OnionProtfolioProject.Application.csproj", "{1FBC6392-7663-4C02-B500-C3F052E67A79}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnionProtfolioProject.Domain", "OnionProtfolioProject.Domain\OnionProtfolioProject.Domain.csproj", "{429FFF50-0F18-46B6-A1F7-F380A900046B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnionProtfolioProject.Infrastructure", "OnionProtfolioProject.Infrastructure\OnionProtfolioProject.Infrastructure.csproj", "{28E4E66B-7F65-4592-B21B-7E85A44B0052}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnionProtfolioProject.Persistence", "OnionProtfolioProject.Persistence\OnionProtfolioProject.Persistence.csproj", "{23AB7404-C5DD-496B-83DA-D45E3C179B23}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnionPortfolioProject.API", "OnionPortfolioProject.API\OnionPortfolioProject.API.csproj", "{A9D8BC8F-943F-41F4-9276-6C4FDF4F17B8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{1FBC6392-7663-4C02-B500-C3F052E67A79} = {645C1242-6737-4DE2-9B29-E477488B8F63}
+		{429FFF50-0F18-46B6-A1F7-F380A900046B} = {645C1242-6737-4DE2-9B29-E477488B8F63}
+		{28E4E66B-7F65-4592-B21B-7E85A44B0052} = {F79D2E07-77F9-4A43-B8E0-C1F23C000E1C}
+		{23AB7404-C5DD-496B-83DA-D45E3C179B23} = {F79D2E07-77F9-4A43-B8E0-C1F23C000E1C}
+		{A9D8BC8F-943F-41F4-9276-6C4FDF4F17B8} = {08A96927-228D-466E-A006-6818BD179A7A}
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1FBC6392-7663-4C02-B500-C3F052E67A79}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1FBC6392-7663-4C02-B500-C3F052E67A79}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1FBC6392-7663-4C02-B500-C3F052E67A79}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1FBC6392-7663-4C02-B500-C3F052E67A79}.Release|Any CPU.Build.0 = Release|Any CPU
+		{429FFF50-0F18-46B6-A1F7-F380A900046B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{429FFF50-0F18-46B6-A1F7-F380A900046B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{429FFF50-0F18-46B6-A1F7-F380A900046B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{429FFF50-0F18-46B6-A1F7-F380A900046B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{28E4E66B-7F65-4592-B21B-7E85A44B0052}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28E4E66B-7F65-4592-B21B-7E85A44B0052}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28E4E66B-7F65-4592-B21B-7E85A44B0052}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28E4E66B-7F65-4592-B21B-7E85A44B0052}.Release|Any CPU.Build.0 = Release|Any CPU
+		{23AB7404-C5DD-496B-83DA-D45E3C179B23}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{23AB7404-C5DD-496B-83DA-D45E3C179B23}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{23AB7404-C5DD-496B-83DA-D45E3C179B23}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{23AB7404-C5DD-496B-83DA-D45E3C179B23}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A9D8BC8F-943F-41F4-9276-6C4FDF4F17B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9D8BC8F-943F-41F4-9276-6C4FDF4F17B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A9D8BC8F-943F-41F4-9276-6C4FDF4F17B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A9D8BC8F-943F-41F4-9276-6C4FDF4F17B8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
