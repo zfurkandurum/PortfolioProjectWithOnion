@@ -17,7 +17,7 @@ public class CategoryRepository : ICategoryRepository
         _context = context;
         _mapper = mapper;
     }
-    public async Task<CategoryDto> GetCategoryByIdAsync(int id)
+    public async Task<CategoryDto> GetCategoryByIdAsync(Guid id)
     {
         var category = await _context.Categories.FindAsync(id);
         return _mapper.Map<CategoryDto>(category);
@@ -40,21 +40,16 @@ public class CategoryRepository : ICategoryRepository
     public async Task<CategoryDto> UpdateCategoryAsync(CategoryDto category)
     {
         var categoryEntity = await _context.Categories.FindAsync(category.CategoryId);
-        if (categoryEntity == null)
-            return null;
-
+        
         _mapper.Map(category, categoryEntity);
 
         await _context.SaveChangesAsync();
         return _mapper.Map<CategoryDto>(categoryEntity);
     }
 
-    public async Task<bool> DeleteCategoryAsync(int id)
+    public async Task<bool> DeleteCategoryAsync(Guid id)
     {
         var category = await _context.Categories.FindAsync(id);
-        if (category == null)
-            return false;
-
         _context.Categories.Remove(category);
         await _context.SaveChangesAsync();
         return true;
