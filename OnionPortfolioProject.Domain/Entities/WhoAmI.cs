@@ -1,6 +1,8 @@
+using Microsoft.AspNetCore.Identity;
+
 namespace OnionPortfolioProject.Domain;
 
-public class WhoAmI
+public class WhoAmI : IdentityUser<Guid>
 {
     public Guid Id { get; set; }
     public string PhotoPath { get; set; }
@@ -8,4 +10,8 @@ public class WhoAmI
     public string CvPath { get; set; }
     public List<Link>? Links { get; set; }
     public List<Skill>? Skills { get; set; }
+    public WhoAmI() : base()
+    {
+        Id = Guid.NewGuid(); 
+    }
 }
