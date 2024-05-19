@@ -1,5 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Design;
+using Microsoft.Extensions.Configuration;
 using PortfolioProjectOnion.Persistence.Context;
 
 namespace OnionProtfolioProject.Persistence;
@@ -8,8 +9,20 @@ public class DesignTimeDbContextFactory : IDesignTimeDbContextFactory<DataDbCont
 {
     public DataDbContext CreateDbContext(string[] args)
     {
-        DbContextOptionsBuilder<DataDbContext> dbContextOptionsBuilder = new();
-        dbContextOptionsBuilder.UseSqlServer("Server=localhost, 1433;Database=OnionArcPortfolioProject;User Id=SA;Password=reallyStrongPwd123;TrustServerCertificate=True;");
-        return new DataDbContext(dbContextOptionsBuilder.Options);
+        string basePath = Directory.GetCurrentDirectory();
+        string path = Path.Combine(basePath, "../OnionPortfolioProject.API"); 
+        
+        IConfigurationRoot configuration = new ConfigurationBuilder()
+            .SetBasePath(path)
+            .AddJsonFile("appsettings.json")
+            .Build();
+
+        var builder = new DbContextOptionsBuilder<DataDbContext>();
+        var connectionString = configuration.GetConnectionString("DefaultConnection");
+
+        builder.UseSqlServer(connectionString);
+
+        return new DataDbContext(builder.Options);
     }
+
 }
