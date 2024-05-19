@@ -12,7 +12,7 @@ using PortfolioProjectOnion.Persistence.Context;
 namespace OnionProtfolioProject.Persistence.Migrations
 {
     [DbContext(typeof(DataDbContext))]
-    [Migration("20240506180558_mig_1")]
+    [Migration("20240518192458_mig_1")]
     partial class mig_1
     {
         /// <inheritdoc />
@@ -25,28 +25,14 @@ namespace OnionProtfolioProject.Persistence.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("ArticleCategory", b =>
-                {
-                    b.Property<int>("ArticlesId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("CategoriesCategoryId")
-                        .HasColumnType("int");
-
-                    b.HasKey("ArticlesId", "CategoriesCategoryId");
-
-                    b.HasIndex("CategoriesCategoryId");
-
-                    b.ToTable("ArticleCategory");
-                });
-
             modelBuilder.Entity("OnionPortfolioProject.Domain.Article", b =>
                 {
-                    b.Property<int>("Id")
+                    b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
+                        .HasColumnType("uniqueidentifier");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+                    b.Property<Guid>("CategoryId")
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("Content")
                         .IsRequired()
@@ -58,16 +44,16 @@ namespace OnionProtfolioProject.Persistence.Migrations
 
                     b.HasKey("Id");
 
+                    b.HasIndex("CategoryId");
+
                     b.ToTable("Articles");
                 });
 
             modelBuilder.Entity("OnionPortfolioProject.Domain.Category", b =>
                 {
-                    b.Property<int>("CategoryId")
+                    b.Property<Guid>("CategoryId")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("CategoryId"));
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("CategoryName")
                         .IsRequired()
@@ -80,11 +66,9 @@ namespace OnionProtfolioProject.Persistence.Migrations
 
             modelBuilder.Entity("OnionPortfolioProject.Domain.Link", b =>
                 {
-                    b.Property<int>("Id")
+                    b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("Icon")
                         .IsRequired()
@@ -98,8 +82,8 @@ namespace OnionProtfolioProject.Persistence.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int?>("WhoAmIId")
-                        .HasColumnType("int");
+                    b.Property<Guid?>("WhoAmIId")
+                        .HasColumnType("uniqueidentifier");
 
                     b.HasKey("Id");
 
@@ -110,11 +94,9 @@ namespace OnionProtfolioProject.Persistence.Migrations
 
             modelBuilder.Entity("OnionPortfolioProject.Domain.Skill", b =>
                 {
-                    b.Property<int>("Id")
+                    b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("IconPath")
                         .IsRequired()
@@ -123,8 +105,8 @@ namespace OnionProtfolioProject.Persistence.Migrations
                     b.Property<string>("Name")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int?>("WhoAmIId")
-                        .HasColumnType("int");
+                    b.Property<Guid?>("WhoAmIId")
+                        .HasColumnType("uniqueidentifier");
 
                     b.HasKey("Id");
 
@@ -135,11 +117,9 @@ namespace OnionProtfolioProject.Persistence.Migrations
 
             modelBuilder.Entity("OnionPortfolioProject.Domain.WhoAmI", b =>
                 {
-                    b.Property<int>("Id")
+                    b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("CvPath")
                         .IsRequired()
@@ -158,19 +138,15 @@ namespace OnionProtfolioProject.Persistence.Migrations
                     b.ToTable("WhoAmIs");
                 });
 
-            modelBuilder.Entity("ArticleCategory", b =>
+            modelBuilder.Entity("OnionPortfolioProject.Domain.Article", b =>
                 {
-                    b.HasOne("OnionPortfolioProject.Domain.Article", null)
-                        .WithMany()
-                        .HasForeignKey("ArticlesId")
+                    b.HasOne("OnionPortfolioProject.Domain.Category", "Category")
+                        .WithMany("Articles")
+                        .HasForeignKey("CategoryId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("OnionPortfolioProject.Domain.Category", null)
-                        .WithMany()
-                        .HasForeignKey("CategoriesCategoryId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                    b.Navigation("Category");
                 });
 
             modelBuilder.Entity("OnionPortfolioProject.Domain.Link", b =>
@@ -185,6 +161,11 @@ namespace OnionProtfolioProject.Persistence.Migrations
                     b.HasOne("OnionPortfolioProject.Domain.WhoAmI", null)
                         .WithMany("Skills")
                         .HasForeignKey("WhoAmIId");
+                });
+
+            modelBuilder.Entity("OnionPortfolioProject.Domain.Category", b =>
+                {
+                    b.Navigation("Articles");
                 });
 
             modelBuilder.Entity("OnionPortfolioProject.Domain.WhoAmI", b =>
