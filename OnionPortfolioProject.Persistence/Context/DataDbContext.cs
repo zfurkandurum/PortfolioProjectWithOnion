@@ -1,11 +1,12 @@
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using OnionPortfolioProject.Domain;
 
 namespace PortfolioProjectOnion.Persistence.Context;
 
-public class DataDbContext : DbContext
+public class DataDbContext : IdentityDbContext<WhoAmI, IdentityRole<Guid>, Guid>
 {
-    
     public DataDbContext(DbContextOptions<DataDbContext> options) : base(options) 
     {
     }
@@ -17,6 +18,8 @@ public class DataDbContext : DbContext
     
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
+        base.OnModelCreating(modelBuilder);
+        
         modelBuilder.Entity<Article>()
             .HasKey(a => a.Id);
         modelBuilder.Entity<Category>()
@@ -27,5 +30,10 @@ public class DataDbContext : DbContext
             .HasKey(l => l.Id);
         modelBuilder.Entity<WhoAmI>()
             .HasKey(w => w.Id);
+
+        modelBuilder.Entity<Article>()
+            .HasOne(a => a.Category)
+            .WithMany(c => c.Articles)
+            .HasForeignKey(a => a.CategoryId);
     }   
 }
