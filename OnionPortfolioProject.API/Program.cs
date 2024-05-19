@@ -6,6 +6,7 @@ using OnionProtfolioProject.Persistence.Repositories;
 using PortfolioProjectOnion.Persistence.Context;
 
 var builder = WebApplication.CreateBuilder(args);
+var configuration = builder.Configuration;
 
 // Add services to the container.
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
@@ -15,7 +16,9 @@ builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
 builder.Services.AddScoped<IArticleRepository, ArticleRepository>();
 builder.Services.AddSwaggerGen();
 builder.Services.AddControllers();
-builder.Services.AddDbContext<DataDbContext>(options => options.UseSqlServer("Server=localhost, 1433;Database=PortfolioProject;User Id=SA;Password=reallyStrongPwd123;TrustServerCertificate=True;"));
+builder.Services.AddDbContext<DataDbContext>(options =>
+    options.UseSqlServer(
+        configuration.GetConnectionString("DefaultConnection")));
 
 var app = builder.Build();
 
@@ -29,6 +32,7 @@ if (app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 
 app.UseAuthentication();
+app.UseAuthorization();
 
 app.MapControllers();
 

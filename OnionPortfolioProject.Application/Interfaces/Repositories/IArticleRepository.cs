@@ -1,13 +1,14 @@
 using OnionPortfolioProject.Domain;
+using OnionProtfolioProject.Application.DTOs;
 
 namespace OnionProtfolioProject.Application.Interfaces.Repositories;
 
 public interface IArticleRepository
 {
-    IEnumerable<Article> GetAllArticles();
-    Article GetArticleById(Guid id);
-    IEnumerable<Article> GetArticleByCategoryId(int categoryId);
-    void AddArticle(Article article);
-    void UpdateArticle(Article article);
-    void DeleteArticle(Guid id);
+    Task<List<ArticleDto>> GetAllArticlesAsync();
+    Task<ArticleDto> GetArticleByIdAsync(Guid id);
+    Task<List<ArticleDto>> GetArticleByCategoryIdAsync(Guid categoryId);
+    Task<ArticleDto> AddArticleAsync(ArticleDto articleDto);
+    Task<ArticleDto> UpdateArticleAsync(ArticleDto articleDto);
+    Task<bool> DeleteArticleAsync(Guid id);
 }
